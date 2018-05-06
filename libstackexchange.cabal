@@ -24,7 +24,7 @@ library
     bytestring,
     containers,
     data-default,
-    http-conduit,
+    http-conduit < 2.3,
     profunctors,
     text
   hs-source-dirs: src
@@ -42,7 +42,7 @@ test-suite api
   build-depends:
     base >= 4.6,
     doctest >= 0.8,
-    http-conduit,
+    http-conduit < 2.3,
     libstackexchange
   if !flag(enable-doctests)
     buildable: False
